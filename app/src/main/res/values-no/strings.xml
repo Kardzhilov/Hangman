@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Title Screen -->
+    <string name="app_name">Hangman</string>
+    <string name="start">Start</string>
+    <string name="rules">Regler</string>
+    <string name="stats">Statistikk</string>
+    <string name="hw">Hei Verden!</string>
+
+
+    <!-- Rules Screen -->
+    <string name="long_rules">Dette er et standard "Hangman" spill, med 6 forsøk (hode,kropp, arm, arm, ben, ben). \n
+        Hvis du ikke er kjent med reglene til Hangman så er de som følger: \n
+        \t Spill skjermen vil presentere deg med et antall understrek, hver av de representerer en bokstav, som tilsammen blir til et ord eller utrykk. \n
+        \t Målet er å finne ut hva ordet er med så få feil bokstav valg som mulig, i denne versionen av spillet for du 6 feil valg før du taper.</string>
+    <string name="gl">Lykke til!</string>
+
+
+
+</resources>

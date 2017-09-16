@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="words">
+        <item>hei</item>
+        <item>skole</item>
+        <item>iskrem</item>
+        <item>bil</item>
+        <item>fisk</item>
+        <item>speil</item>
+        <item>god morgen</item>
+        <item>elsker deg</item>
+        <item>veldig bra</item>
+        <item>lekeplass</item>
+        <item>barnehage</item>
+        <item>sitron juice</item>
+    </string-array>
+</resources>

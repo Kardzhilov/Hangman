@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="words">
+        <item>hello</item>
+        <item>great scott</item>
+        <item>fishing</item>
+        <item>carpark</item>
+        <item>fast shipping</item>
+        <item>time flies</item>
+        <item>hangman</item>
+        <item>sports car</item>
+        <item>submarine</item>
+        <item>cool shoes</item>
+        <item>planet</item>
+
+    </string-array>
+
+    <!--
+    <string-array name="normal">
+        <item>god morgen</item>
+        <item>elsker deg</item>
+        <item>veldig bra</item>
+        <item>lekeplass</item>
+        <item>barnehage</item>
+        <item>sitron juice</item>
+    </string-array>
+
+    <string-array name="hard">
+        <item>Big Buck Bunny</item>
+    </string-array>
+    -->
+</resources>
