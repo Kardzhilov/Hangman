@@ -17,15 +17,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Game"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_game"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/FullscreenTheme" />
-        <activity android:name=".GStatistics"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".GRules"
-            android:parentActivityName=".MainActivity"></activity>
+            android:name=".GStatistics"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".GRules"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Game"></activity>
     </application>
 
 </manifest>
