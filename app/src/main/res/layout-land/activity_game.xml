@@ -21,21 +21,36 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/imageViewAttempts"
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1.3"
-                app:srcCompat="@drawable/hang1" />
+                android:layout_weight="1.3">
 
-            <LinearLayout
-                android:id="@+id/blank_space_row"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.3"
-                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
-            </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/blank_space_row"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.7"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageViewAttempts"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/hang1" />
+                </LinearLayout>
+
+            </RelativeLayout>
 
             <Space
                 android:layout_width="match_parent"
@@ -65,9 +80,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="11.11"
                     android:text="A"
-                    android:textSize="18sp"
-                    android:onClick="letterPress"
-                    android:tag="A"/>
+                    android:textSize="18sp" />
 
                 <Button
                     android:id="@+id/buttonB"
@@ -75,9 +88,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="11.11"
                     android:text="B"
-                    android:textSize="18sp"
-                    android:onClick="letterPress"
-                    android:tag="B"/>
+                    android:textSize="18sp" />
 
                 <Button
                     android:id="@+id/buttonC"
@@ -85,9 +96,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="11.11"
                     android:text="C"
-                    android:textSize="18sp"
-                    android:onClick="letterPress"
-                    android:tag="C"/>
+                    android:textSize="18sp" />
 
                 <Button
                     android:id="@+id/buttonD"
@@ -95,9 +104,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="11.11"
                     android:text="D"
-                    android:textSize="18sp"
-                    android:onClick="letterPress"
-                    android:tag="D"/>
+                    android:textSize="18sp" />
 
                 <Button
                     android:id="@+id/buttonE"
@@ -105,9 +112,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="11.11"
                     android:text="E"
-                    android:textSize="18sp"
-                    android:onClick="letterPress"
-                    android:tag="E"/>
+                    android:textSize="18sp" />
 
                 <Button
                     android:id="@+id/buttonF"
@@ -115,9 +120,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="11.11"
                     android:text="F"
-                    android:textSize="18sp"
-                    android:onClick="letterPress"
-                    android:tag="F"/>
+                    android:textSize="18sp" />
 
                 <Button
                     android:id="@+id/buttonG"
@@ -125,9 +128,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="11.11"
                     android:text="G"
-                    android:textSize="18sp"
-                    android:onClick="letterPress"
-                    android:tag="G"/>
+                    android:textSize="18sp" />
 
                 <Button
                     android:id="@+id/buttonH"
@@ -135,9 +136,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="11.11"
                     android:text="H"
-                    android:textSize="18sp"
-                    android:onClick="letterPress"
-                    android:tag="H"/>
+                    android:textSize="18sp" />
 
                 <Button
                     android:id="@+id/buttonI"
@@ -145,9 +144,39 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="11.11"
                     android:text="I"
-                    android:textSize="18sp"
-                    android:onClick="letterPress"
-                    android:tag="I"/>
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/buttonL"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="11.11"
+                    android:text="L"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/buttonM"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="11.11"
+                    android:text="M"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/buttonJ"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="11.11"
+                    android:text="J"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/buttonK"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="11.11"
+                    android:text="K"
+                    android:textSize="18sp" />
 
             </LinearLayout>
 
@@ -158,54 +187,12 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/buttonJ"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="11.11"
-                    android:text="J"
-                    android:textSize="18sp"
-                    android:onClick="letterPress"
-                    android:tag="J"/>
-
-                <Button
-                    android:id="@+id/buttonK"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="11.11"
-                    android:text="K"
-                    android:textSize="18sp"
-                    android:onClick="letterPress"
-                    android:tag="K"/>
-
-                <Button
-                    android:id="@+id/buttonL"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="11.11"
-                    android:text="L"
-                    android:textSize="18sp"
-                    android:onClick="letterPress"
-                    android:tag="L"/>
-
-                <Button
-                    android:id="@+id/buttonM"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="11.11"
-                    android:text="M"
-                    android:textSize="18sp"
-                    android:onClick="letterPress"
-                    android:tag="M"/>
-
-                <Button
                     android:id="@+id/buttonN"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="11.11"
                     android:text="N"
-                    android:textSize="18sp"
-                    android:onClick="letterPress"
-                    android:tag="N"/>
+                    android:textSize="18sp" />
 
                 <Button
                     android:id="@+id/buttonO"
@@ -213,9 +200,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="11.11"
                     android:text="O"
-                    android:textSize="18sp"
-                    android:onClick="letterPress"
-                    android:tag="O"/>
+                    android:textSize="18sp" />
 
                 <Button
                     android:id="@+id/buttonP"
@@ -223,9 +208,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="11.11"
                     android:text="P"
-                    android:textSize="18sp"
-                    android:onClick="letterPress"
-                    android:tag="P"/>
+                    android:textSize="18sp" />
 
                 <Button
                     android:id="@+id/buttonQ"
@@ -233,9 +216,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="11.11"
                     android:text="Q"
-                    android:textSize="18sp"
-                    android:onClick="letterPress"
-                    android:tag="Q"/>
+                    android:textSize="18sp" />
 
                 <Button
                     android:id="@+id/buttonR"
@@ -243,9 +224,71 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="11.11"
                     android:text="R"
-                    android:textSize="18sp"
-                    android:onClick="letterPress"
-                    android:tag="R"/>
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/buttonX"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="11.11"
+                    android:text="X"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/buttonT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="11.11"
+                    android:text="T"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/buttonU"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="11.11"
+                    android:text="U"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/buttonY"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="11.11"
+                    android:text="Y"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/buttonZ"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="11.11"
+                    android:text="Z"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/buttonV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="11.11"
+                    android:text="V"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/buttonW"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="11.11"
+                    android:text="W"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/buttonS"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="11.11"
+                    android:text="S"
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -256,85 +299,6 @@
                 android:layout_marginRight="15dp"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/buttonS"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="11.11"
-                    android:text="S"
-                    android:textSize="18sp"
-                    android:onClick="letterPress"
-                    android:tag="S"/>
-
-                <Button
-                    android:id="@+id/buttonT"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="11.11"
-                    android:text="T"
-                    android:textSize="18sp"
-                    android:onClick="letterPress"
-                    android:tag="T"/>
-
-                <Button
-                    android:id="@+id/buttonU"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="11.11"
-                    android:text="U"
-                    android:textSize="18sp"
-                    android:onClick="letterPress"
-                    android:tag="U"/>
-
-                <Button
-                    android:id="@+id/buttonV"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="11.11"
-                    android:text="V"
-                    android:textSize="18sp"
-                    android:onClick="letterPress"
-                    android:tag="V"/>
-
-                <Button
-                    android:id="@+id/buttonW"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="11.11"
-                    android:text="W"
-                    android:textSize="18sp"
-                    android:onClick="letterPress"
-                    android:tag="W"/>
-
-                <Button
-                    android:id="@+id/buttonX"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="11.11"
-                    android:text="X"
-                    android:textSize="18sp"
-                    android:onClick="letterPress"
-                    android:tag="X"/>
-
-                <Button
-                    android:id="@+id/buttonY"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="11.11"
-                    android:text="Y"
-                    android:textSize="18sp"
-                    android:onClick="letterPress"
-                    android:tag="Y"/>
-
-                <Button
-                    android:id="@+id/buttonZ"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="11.11"
-                    android:text="Z"
-                    android:textSize="18sp"
-                    android:onClick="letterPress"
-                    android:tag="Z"/>
             </LinearLayout>
 
         </LinearLayout>
