@@ -7,10 +7,6 @@
     android:layout_height="match_parent"
     tools:context="com.example.micha.hangman.MainActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -22,10 +18,10 @@
             android:id="@+id/button_start"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="80dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginStart="80dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:elevation="2dp"
             android:padding="20dp"
@@ -38,10 +34,10 @@
             android:id="@+id/button_stats"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="80dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginStart="80dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:elevation="2dp"
             android:padding="20dp"
@@ -55,10 +51,10 @@
             android:id="@+id/button_rule"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="80dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginStart="80dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:elevation="2dp"
             android:padding="20dp"
@@ -68,34 +64,30 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button_start" />
 
-        <ToggleButton
-            android:id="@+id/toggleButton_lang"
+        <Button
+            android:id="@+id/Language"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="80dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginStart="80dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:checked="true"
+            android:elevation="2dp"
             android:padding="20dp"
-            android:text="ToggleButton"
-            android:textAllCaps="false"
-            android:textOff="English"
-            android:textOn="Norsk"
             android:textSize="18sp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_stats" />
+            android:text="@string/lang"
+            android:onClick="changeLanguage"
+            android:tag="en"/>
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="80dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginStart="80dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:gravity="center"
             android:text="@string/hw"
@@ -106,5 +98,5 @@
             app:layout_constraintTop_toTopOf="parent" />
 
     </LinearLayout>
-    </ScrollView>
+
 </LinearLayout>

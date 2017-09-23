@@ -5,6 +5,7 @@
     <string name="rules">Rules</string>
     <string name="stats">Statistics</string>
     <string name="hw">Hello World!</string>
+    <string name="lang">Switch to Norwegian</string>
 
     <!-- Rules Screen -->
     <string name="long_rules">
@@ -16,6 +17,7 @@
 
     <!-- End of Game -->
     <string name="win">Congratulations Guessed Right</string>
+    <string name="msg">The word was: </string>
     <string name="loss">You Died</string>
     <string name="another">Play Again</string>
     <string name="quitt">Quit</string>

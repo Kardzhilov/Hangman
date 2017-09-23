@@ -6,6 +6,7 @@
     <string name="rules">Regler</string>
     <string name="stats">Statistikk</string>
     <string name="hw">Hei Verden!</string>
+    <string name="lang">Bytt til Engelsk</string>
 
 
     <!-- Rules Screen -->
@@ -15,6 +16,12 @@
         \t Målet er å finne ut hva ordet er med så få feil bokstav valg som mulig, i denne versionen av spillet for du 6 feil valg før du taper.</string>
     <string name="gl">Lykke til!</string>
 
+    <!-- End of Game NEED TO TRANSLATE-->
+    <string name="win">Du Vant!</string>
+    <string name="msg">Ordet var: </string>
+    <string name="loss">Du Døde</string>
+    <string name="another">Spill igjen?</string>
+    <string name="quitt">Avslutt</string>
 
 
 </resources>

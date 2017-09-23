@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="words">
+        <item>HEI</item>
+        <item>SKOLE</item>
+        <item>ISKREM</item>
+        <item>BIL</item>
+        <item>FISK</item>
+        <item>SPEIL</item>
+        <item>GOD MORGEN</item>
+        <item>ELSKER DEG</item>
+        <item>VELDIG BRA</item>
+        <item>LEKEPLASS</item>
+        <item>BARNEHAGE</item>
+        <item>SITRON JUICE</item>
+    </string-array>
+</resources>
