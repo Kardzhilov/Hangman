@@ -42,7 +42,7 @@ public class Game extends AppCompatActivity {
         Resources res = getResources();
         String[] array = res.getStringArray(R.array.words);
         words = new ArrayList<String>(Arrays.asList(array));
-        
+
         start();
     }
 
