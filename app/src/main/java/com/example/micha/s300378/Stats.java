@@ -5,10 +5,11 @@ package com.example.micha.s300378;
  */
 
 public class Stats {
-    public static int win;
-    public static int loss;
+    private static int win;
+    private static int loss;
 
-    public void curStat(){
+
+    public void reStat(){
         win = 0;
         loss = 0;
     }

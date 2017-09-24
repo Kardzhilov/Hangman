@@ -31,6 +31,7 @@ public class Game extends AppCompatActivity {
     public int maxC = 0;
     public int presses[] = new int[30];
     public int pressNr = 0;
+    public Stats stat = new Stats();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +42,7 @@ public class Game extends AppCompatActivity {
         Resources res = getResources();
         String[] array = res.getStringArray(R.array.words);
         words = new ArrayList<String>(Arrays.asList(array));
-
+        
         start();
     }
 
@@ -61,9 +62,8 @@ public class Game extends AppCompatActivity {
         if(letterCheck(v.getTag().toString())){             //right guess
             knapp.getBackground().setColorFilter(0xFFE8E8E8, PorterDuff.Mode.MULTIPLY);
             if (correct == (maxC)){
-                //something something stats
+                stat.winP();
                 dialogAlert("win");
-
             }
         } else {                                            //wrong guess
             knapp.getBackground().setColorFilter(0xFFE23F55, PorterDuff.Mode.MULTIPLY);
@@ -86,7 +86,7 @@ public class Game extends AppCompatActivity {
             }
             else if (fails == 6){
                 hang.setImageResource(R.drawable.hang7);
-                //something something stats
+                stat.lossP();
                 dialogAlert("loss");
             }
         }
