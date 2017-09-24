@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.micha.hangman">
+    package="com.example.micha.s300378">
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
@@ -17,7 +17,7 @@
         android:roundIcon="@drawable/hang_icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
+        <activity android:name="com.example.micha.s300378.MainActivity"
             android:screenOrientation="portrait"
             android:configChanges="locale">
             <intent-filter>
@@ -27,16 +27,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".GStatistics"
-            android:parentActivityName=".MainActivity"
+            android:name="com.example.micha.s300378.GStatistics"
+            android:parentActivityName="com.example.micha.s300378.MainActivity"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".GRules"
-            android:parentActivityName=".MainActivity"
+            android:name="com.example.micha.s300378.GRules"
+            android:parentActivityName="com.example.micha.s300378.MainActivity"
             android:screenOrientation="portrait"/>
 
-        <activity android:name=".Game"
+        <activity android:name="com.example.micha.s300378.Game"
             android:screenOrientation="portrait">
         </activity>
     </application>

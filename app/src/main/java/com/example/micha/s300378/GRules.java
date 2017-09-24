@@ -1,4 +1,4 @@
-package com.example.micha.hangman;
+package com.example.micha.s300378;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

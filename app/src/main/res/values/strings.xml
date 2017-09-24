@@ -14,14 +14,18 @@
         \t You are presented with a number of underscores each representing a letter that combined make a word or phrase. \n
         \t Your job is to guess the word or phrase by guessing letters that it might contain, and in this version you can only make 6 wrong guesses before you loose.</string>
     <string name="gl">Good Luck!</string>
+    <!-- Stats -->
+    <string name="TextWin">Number of Wins:</string>
+    <string name="TextLoss">Number of Losses:</string>
+    <string name="isEmpty">Play the game to make some stats.</string>
 
-    <!-- End of Game -->
+    <!-- Game -->
     <string name="win">Congratulations Guessed Right</string>
     <string name="msg">The word was: </string>
     <string name="loss">You Died</string>
     <string name="another">Play Again</string>
     <string name="quitt">Quit</string>
-
+    <string name="emp">We ran out of words.</string>
 
 
 </resources>

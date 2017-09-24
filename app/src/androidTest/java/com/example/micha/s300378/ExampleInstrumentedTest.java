@@ -1,4 +1,4 @@
-package com.example.micha.hangman;
+package com.example.micha.s300378;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.micha.hangman", appContext.getPackageName());
+        assertEquals("com.example.micha.s300378", appContext.getPackageName());
     }
 }

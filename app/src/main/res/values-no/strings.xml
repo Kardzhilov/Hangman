@@ -15,6 +15,10 @@
         \t Spill skjermen vil presentere deg med et antall understrek, hver av de representerer en bokstav, som tilsammen blir til et ord eller utrykk. \n
         \t Målet er å finne ut hva ordet er med så få feil bokstav valg som mulig, i denne versionen av spillet for du 6 feil valg før du taper.</string>
     <string name="gl">Lykke til!</string>
+    <!-- Stats -->
+    <string name="winText">Antall Seier</string>
+    <string name="lossText">Antall Død</string>
+    <string name="isEmpty">Spill for å generere Statestikk</string>
 
     <!-- End of Game NEED TO TRANSLATE-->
     <string name="win">Du Vant!</string>
@@ -23,5 +27,6 @@
     <string name="another">Spill igjen?</string>
     <string name="quitt">Avslutt</string>
 
+    <string name="emp">Vi har ikke flere ord.</string>
 
 </resources>

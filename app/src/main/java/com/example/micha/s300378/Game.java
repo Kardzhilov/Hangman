@@ -1,28 +1,31 @@
-package com.example.micha.hangman;
+package com.example.micha.s300378;
 
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
-import android.graphics.Color;
 import android.graphics.PorterDuff;
-import android.os.StrictMode;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 
 public class Game extends AppCompatActivity {
 
     public String[] textArray;
     public String randomStr;
+    public ArrayList<String> words;
     public int fails = 0;
     public int correct = 0;
     public int maxC = 0;
@@ -34,8 +37,14 @@ public class Game extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
 
+
+        Resources res = getResources();
+        String[] array = res.getStringArray(R.array.words);
+        words = new ArrayList<String>(Arrays.asList(array));
+
         start();
     }
+
 
     public void buttonPressed(int i){
         presses[pressNr] = i;
@@ -160,13 +169,21 @@ public class Game extends AppCompatActivity {
     }
 
     private void start(){
+
         //random word
-        //if (textArray == null) {
-            Resources res = getResources();
-            String[] array = res.getStringArray(R.array.words);
-            randomStr = array[new Random().nextInt(array.length)];
+
+        //makes sure you dont crash from lack of words
+        if (words.size() < 2){
+            Toast.makeText(getApplicationContext(),getResources().getString(R.string.emp), Toast.LENGTH_SHORT).show();
+            finish();
+        }
+
+            Random rand = new Random();
+            int numb = rand.nextInt(words.size() - 0);
+
+            randomStr = words.get(numb);
+            words.remove(numb);
             textArray = randomStr.split("");
-        //}
 
         LinearLayout linearLayout = (LinearLayout) findViewById(R.id.blank_space_row);
         for( int i = 1; i < textArray.length; i++ )
