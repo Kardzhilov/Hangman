@@ -8,12 +8,14 @@ public class Stats {
     private static int win;
     private static int loss;
 
-
+    //Resets the stats
     public void reStat(){
         win = 0;
         loss = 0;
     }
 
+
+    //Increases the stats
     public void winP(){
         win++;
     }
@@ -21,6 +23,8 @@ public class Stats {
         loss++;
     }
 
+
+    //Returns the states
     public int getWin(){
         return win;
     }

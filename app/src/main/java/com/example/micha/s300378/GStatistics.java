@@ -14,6 +14,7 @@ public class GStatistics extends AppCompatActivity {
 
         Stats stat = new Stats();
 
+        //Tells you to play if you have not finished a game yet
         if (stat.getWin()+stat.getLoss()!=0){
             TextView needToPlay = (TextView)findViewById(R.id.twEmpty);
             needToPlay.setText("");

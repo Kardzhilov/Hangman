@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //StartGame
         final View start = findViewById(R.id.button_start);
         start.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //RuleScreen
         final View rule = findViewById(R.id.button_rule);
         rule.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //Stat Screen
         final View stat = findViewById(R.id.button_stats);
         stat.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -41,9 +44,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
     }
 
+
+    //Language change method
     public void changeLanguage(View v) {
         String langu = v.getTag().toString();
         Log.d("MainActivity", "Language button was clicked!");

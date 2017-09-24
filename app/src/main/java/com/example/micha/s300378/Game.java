@@ -38,7 +38,7 @@ public class Game extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
 
-
+        //converts the String array to a ArrayList<String>
         Resources res = getResources();
         String[] array = res.getStringArray(R.array.words);
         words = new ArrayList<String>(Arrays.asList(array));
@@ -46,19 +46,19 @@ public class Game extends AppCompatActivity {
         start();
     }
 
-
+    //Keeping track of which buttons were pressed so they can be reset later
     public void buttonPressed(int i){
         presses[pressNr] = i;
         pressNr++;
     }
 
+    //dissables buttons and checks adjusts score
     public void letterPress(View v){
         Button knapp = (Button) v;
         knapp.setEnabled(false);
         buttonPressed(v.getId());
         //0xFFE23F55 nice Deep red
         //0xFFE8E8E8 more of a faded look
-        //this uses HEX8 for some reason
         if(letterCheck(v.getTag().toString())){             //right guess
             knapp.getBackground().setColorFilter(0xFFE8E8E8, PorterDuff.Mode.MULTIPLY);
             if (correct == (maxC)){
@@ -91,9 +91,9 @@ public class Game extends AppCompatActivity {
             }
         }
 
-        //Toast.makeText(getApplicationContext(), v.getTag().toString(), Toast.LENGTH_SHORT).show();
     }
 
+    //makes the end of game pop up appear
     public void dialogAlert(String type){
         String myTitle = "Hummm";
         String another = getResources().getString(R.string.another);
@@ -132,6 +132,7 @@ public class Game extends AppCompatActivity {
         dialog.show();
     }
 
+    //checks if the letter is in the word
     public Boolean letterCheck(String s){
         boolean res =false;
         for( int i = 1; i < textArray.length; i++ )
@@ -146,6 +147,7 @@ public class Game extends AppCompatActivity {
         return res;
     }
 
+    //resets the game
     private void again(){
         ImageView hang = (ImageView) findViewById(R.id.imageViewAttempts);
         hang.setImageResource(R.drawable.hang1);
@@ -168,22 +170,21 @@ public class Game extends AppCompatActivity {
         start();
     }
 
+    //starts up a game session
     private void start(){
 
-        //random word
 
-        //makes sure you dont crash from lack of words
         if (words.size() < 2){
             Toast.makeText(getApplicationContext(),getResources().getString(R.string.emp), Toast.LENGTH_SHORT).show();
             finish();
         }
 
-            Random rand = new Random();
-            int numb = rand.nextInt(words.size() - 0);
+        Random rand = new Random();
+        int numb = rand.nextInt(words.size() - 0);
 
-            randomStr = words.get(numb);
-            words.remove(numb);
-            textArray = randomStr.split("");
+        randomStr = words.get(numb);
+        words.remove(numb);
+        textArray = randomStr.split("");
 
         LinearLayout linearLayout = (LinearLayout) findViewById(R.id.blank_space_row);
         for( int i = 1; i < textArray.length; i++ )
